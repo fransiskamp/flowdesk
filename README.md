@@ -2,6 +2,8 @@
 
 > A modern productivity workspace for managing projects, tasks, and team collaboration.
 
+**Live Demo:** https://flowdesk-workspace.vercel.app/
+
 FlowDesk is a full-stack productivity workspace designed to help teams organize projects, manage tasks, and collaborate in one centralized platform.
 
 The application provides project management workflows with task tracking, Kanban boards, team member management, activity history, and secure authentication.
@@ -76,11 +78,12 @@ The application provides project management workflows with task tracking, Kanban
 | UI              | React        |
 | Validation      | Zod          |
 | Email           | Resend       |
+| Deployment      | Vercel       |
 | Package Manager | npm          |
 
 ## 🏗️ Architecture
 
-FlowDesk follows a modern full-stack architecture using Next.js App Router.
+FlowDesk follows a modern full-stack architecture using the Next.js App Router.
 
 ```text
 ┌──────────────────────────────┐
@@ -209,6 +212,14 @@ Open:
 http://localhost:3000
 ```
 
+## 🌐 Deployment
+
+FlowDesk is deployed to Vercel and is available as a live production application.
+
+**Live Demo:** https://flowdesk-workspace.vercel.app/
+
+The production environment uses PostgreSQL for persistent data storage and environment-based configuration for authentication and external services.
+
 ## 🔑 Demo Accounts
 
 For local development, demo accounts can be created through the registration flow or the provided seed script.
@@ -262,6 +273,7 @@ FlowDesk was built as a portfolio project to demonstrate practical full-stack de
 * Working with database migrations
 * Designing role-based workspace functionality
 * Creating a responsive productivity interface
+* Deploying a full-stack application to a production environment
 
 ## 🔮 Future Improvements
 
@@ -276,7 +288,7 @@ Potential improvements include:
 * Workspace settings
 * More granular permissions
 * Automated testing
-* Deployment and CI/CD pipeline
+* CI/CD improvements
 
 ## 📄 License
 
