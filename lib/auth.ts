@@ -11,6 +11,13 @@ const resend = new Resend(
 );
 
 export const auth = betterAuth({
+  baseURL: process.env.BETTER_AUTH_URL,
+
+  trustedOrigins: [
+    process.env.BETTER_AUTH_URL,
+    process.env.NEXT_PUBLIC_APP_URL,
+  ].filter((origin): origin is string => Boolean(origin)),
+
   database: drizzleAdapter(db, {
     provider: "pg",
     schema: {
